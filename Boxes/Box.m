@@ -40,7 +40,7 @@
     
 }
 
--(int)time:(float)first Second:(float)second{
++(int)time:(float)first Second:(float)second{
     int result;
     if(first > second){
        result = round(first/second);

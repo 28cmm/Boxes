@@ -13,8 +13,9 @@ int main(int argc, const char * argv[]) {
         Box * result = [[Box alloc]initWithNumber:20 theHeight:20 theWidth:30];
         NSLog(@"the volumn is %f",[result volumn]);
         Box * result2 = [[Box alloc]initWithNumber2:30 theHeight:20 theWidth:30];
-        int final=[result time:[result volumn] Second:[result2 volumn]];
-        NSLog(@"the bigger box is %i than smaller one",final);
+        int final = [Box time:[result volumn] Second:[result2 volumn]];
+        //int final=[result time:[result volumn] Second:[result2 volumn]];
+        NSLog(@"the bigger box is %i times than smaller one",final);
         
     }
     return 0;
